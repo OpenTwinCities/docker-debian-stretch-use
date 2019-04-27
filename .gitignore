@@ -1,0 +1,7 @@
+.DS_Store
+rbenv-rails-*/*
+
+docker-debian-buster-use
+templates_shared
+templates_use
+setup.sh
