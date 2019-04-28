@@ -62,9 +62,6 @@ cp docker-debian-buster-use/setup.sh setup.sh
 cp -r docker-debian-buster-use/templates_shared templates_shared
 cp -r docker-debian-buster-use/templates_use templates_use
 wait
-remove_dir 'docker-debian-buster-use'
-remove_dir 'templates_shared'
-remove_dir 'templates_use'
 
 ###################################################
 # FINISHED: acquiring the scripts from the upstream 
@@ -72,3 +69,7 @@ remove_dir 'templates_use'
 #####################################
 
 sh setup.sh $ABBREV $DOCKER_IMAGE $CONTAINER ${ARRAY_PORTS[@]}
+
+remove_dir 'docker-debian-buster-use'
+remove_dir 'templates_shared'
+remove_dir 'templates_use'
