@@ -1,5 +1,5 @@
 .DS_Store
-rbenv-rails-*/*
+rvm-rails-*/*
 
 docker-debian-stretch-use
 templates_shared

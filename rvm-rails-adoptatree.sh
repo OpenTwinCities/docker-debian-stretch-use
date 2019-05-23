@@ -1,10 +1,10 @@
 #!/bin/bash
 
-ABBREV='rbenv-rails-sessionizer'
-OWNER='jhsu802701'
+ABBREV='rvm-rails-adoptatree'
+OWNER='opentwincities'
 DISTRO='debian'
 SUITE='stretch'
-DOCKER_IMAGE="registry.gitlab.com/$OWNER/docker-$DISTRO-$SUITE-$ABBREV"
+DOCKER_IMAGE="$OWNER/$DISTRO-$SUITE-$ABBREV"
 CONTAINER="container-$DISTRO-$SUITE-$ABBREV"
 
 echo 'By default, your host port numbers are:'
