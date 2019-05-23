@@ -40,7 +40,7 @@ done
 
 ################################################
 # BEGIN: acquiring the scripts from the upstream 
-# docker-debian-buster-use repository
+# docker-debian-stretch-use repository
 #####################################
 
 remove_dir () {
@@ -51,25 +51,25 @@ remove_dir () {
   fi
 }
 
-remove_dir 'docker-debian-buster-use'
+remove_dir 'docker-debian-stretch-use'
 remove_dir 'templates_shared'
 remove_dir 'templates_use'
 
 echo '--------------------------------------------------------------------------'
-echo 'git clone https://gitlab.com/rubyonracetracks/docker-debian-buster-use.git'
-git clone https://gitlab.com/rubyonracetracks/docker-debian-buster-use.git
-cp docker-debian-buster-use/setup.sh setup.sh
-cp -r docker-debian-buster-use/templates_shared templates_shared
-cp -r docker-debian-buster-use/templates_use templates_use
+echo 'git clone https://gitlab.com/rubyonracetracks/docker-debian-stretch-use.git'
+git clone https://gitlab.com/rubyonracetracks/docker-debian-stretch-use.git
+cp docker-debian-stretch-use/setup.sh setup.sh
+cp -r docker-debian-stretch-use/templates_shared templates_shared
+cp -r docker-debian-stretch-use/templates_use templates_use
 wait
 
 ###################################################
 # FINISHED: acquiring the scripts from the upstream 
-# docker-debian-buster-use repository
+# docker-debian-stretch-use repository
 #####################################
 
 sh setup.sh $ABBREV $DOCKER_IMAGE $CONTAINER ${ARRAY_PORTS[@]}
 
-remove_dir 'docker-debian-buster-use'
+remove_dir 'docker-debian-stretch-use'
 remove_dir 'templates_shared'
 remove_dir 'templates_use'

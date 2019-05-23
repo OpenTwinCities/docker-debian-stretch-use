@@ -1,9 +1,9 @@
 #!/bin/bash
 
-ABBREV='rbenv-rails-rubymn2'
+ABBREV='rbenv-rails-sessionizer'
 OWNER='jhsu802701'
 DISTRO='debian'
-SUITE='buster'
+SUITE='stretch'
 DOCKER_IMAGE="registry.gitlab.com/$OWNER/docker-$DISTRO-$SUITE-$ABBREV"
 CONTAINER="container-$DISTRO-$SUITE-$ABBREV"
 
